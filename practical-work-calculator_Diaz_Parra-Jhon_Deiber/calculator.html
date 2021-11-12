@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Exercise - Calculator</title>
+<link rel="stylesheet" href="css/calculator.css">
+<script src="js/calculator.js"></script>
+</head>
+
+<button id="openButton" onclick="Start()">Calculator</button>
+<body>
+<div class="container" style="display:none">
+    <div id="calculator">
+        <br>
+        Calculator<div>
+            <hr>
+            <input type="numeric" title="Enter the first numeric value" size="6" id="value1" />
+            <input type="text" title="Selected an operator" size="1" id="operator" disabled>
+            <input type="numeric" title="Enter the second numeric value" size="6" id="value2" />
+            
+            <button id="equalButton" onclick="Calculate()"> = </button>
+            
+            <input type="text" size="10" id="result" disabled/>
+
+            <hr>
+            <button onclick="Operation(0);">+</button>
+            <button onclick="Operation(1);">-</button>
+            <button onclick="Operation(2);">*</button>
+            <button onclick="Operation(3);">/</button>
+            <hr>
+            
+            <p type="text" id="message"></p>
+            
+            <button id="closeButton" onclick="End()">Close</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
